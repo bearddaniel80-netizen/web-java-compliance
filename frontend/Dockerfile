@@ -35,7 +35,7 @@ COPY --from=deps /web-compliance/frontend .
 # RUN npm run docs
 RUN mkdir -p src/components
 
-COPY --from=lib /components/react-component-lib src
+COPY --from=lib /components/react-component-lib src/components
 
 RUN npm run build
 
